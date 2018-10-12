@@ -1,0 +1,8 @@
+---
+  - hosts: all
+    become: yes
+    tasks:
+      - name: creating directory
+        file: 
+           path: /home/ansible/lenovo
+           state: directory
